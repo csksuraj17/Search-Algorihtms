@@ -27,7 +27,7 @@ while i==0:
     s = input()
     if s=='y':
         u,v  = map(int,input("Enter a first and second node: ").split())
-        print(u,v, type(u))
+        #print(u,v)
         g.addEdge(u,v)
     else:
         i=1
@@ -35,8 +35,4 @@ print(g.graph)
 print("Please enter starting node : ")
 u = int(input())
 print("\nstarting vertex : ", u)
-g.DFS_main(u)
-
-        
-    
-            
+g.DFS_main(u)  
